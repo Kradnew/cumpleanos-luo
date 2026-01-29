@@ -25,12 +25,21 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        @media (max-width: 768px) {
+            .music-btn {
+                position: static;
+                margin: 1rem auto;
+                display: block;
+    }
+}
         
         body {
             font-family: 'Crimson Text', serif;
             background: linear-gradient(135deg, var(--pastel-blue) 0%, #e8f2f8 100%);
             color: var(--deep-blue);
             overflow-x: hidden;
+            padding-bottom: 90px;
         }
         
         /* ============================================
@@ -78,6 +87,17 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+        }
+        @media (max-width: 768px) {
+            .bottom-nav {
+                height: 70px;
+                font-size: 0.75rem;
+            }
+            .bottom-nav img,
+            .bottom-nav svg {
+                width: 22px;
+                height: 22px;
+            }
         }
         
         /* ============================================
